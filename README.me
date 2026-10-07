@@ -1,0 +1,20 @@
+# Lost and Found Campus System (Console Application)
+
+A console-based Java application built using Object-Oriented Programming (OOP) principles and JDBC to track and manage lost, found, and claimed items within a campus.
+
+## Features
+- **Report Lost Items:** Log lost item details including location, color, and reporter information.
+- **Report Found Items:** Register found objects for identification.
+- **Claim Processing:** Submit ownership claim requests for verification.
+- **Persistent Storage:** MySQL database connectivity using JDBC and PreparedStatements.
+
+## Tech Stack
+- **Language:** Core Java (JDK 21)
+- **Database:** MySQL
+- **Connectivity:** JDBC Driver
+
+## OOP Principles Applied
+- **Abstraction:** Generic `Item` abstract base class defining core contracts (`getType`, `getDescription`).
+- **Inheritance:** `LostItem` and `FoundItem` inheriting common attributes and behavior from `Item`.
+- **Polymorphism:** Runtime polymorphism via method overriding (`@Override`).
+- **Encapsulation & DAO Pattern:** Database operations isolated inside `DAO` class for separation of concerns.
